@@ -25,7 +25,11 @@ function getCompurterChoice() {
 
 ###### [템플릿 리터럴](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
 
+3. #### 반복문을 사용해서 5번의 게임을 진행하고, 총 점수를 계산해 누가 이겼는지 보여주는 함수
 
+##### 반복문을 사용해서 한 라운드를 실행하는 함수 호출, 승패 또는 무승부 여부를 `winOrLose`변수를 통해 0,1,2 로 구분하고 winOrLose 값에 따라 플레이어와 컴퓨터의 점수 카운팅하는 조건문 추가
+
+##### 게임 5번이 진행되고 플레이어와 컴퓨터 점수를 각각 합산한 결과를 출력
 
 ######  
 
