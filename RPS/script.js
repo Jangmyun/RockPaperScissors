@@ -44,24 +44,24 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(){                            //playRound()함수를 5번 진행하고 승패 결과를 출력하는 함수
-    let countPlayerScore= 0;                //플레이어와 컴퓨터의 점수 초기값=0
-    let countComputerScore=0;
+    let PlayerScore= 0;                //플레이어와 컴퓨터의 점수 초기값=0
+    let ComputerScore=0;
     for(let i=0; i<=4; i++){                //게임 5번 진행을 위한 반복문
         mySelection = prompt("Rock or Paper or Scissors?");
         console.log(playRound(mySelection,getComputerChoice()))
         if(winOrLose==0){
-            countComputerScore= countComputerScore+1;
+            ComputerScore= ComputerScore+1;
         }else if(winOrLose==1){
-            countPlayerScore= countPlayerScore+1;
+            PlayerScore= PlayerScore+1;
         }else{
-            countPlayerScore= countPlayerScore+1;
-            countComputerScore= countComputerScore+1;
+            PlayerScore= PlayerScore+1;
+            ComputerScore= ComputerScore+1;
         }
     }
-    console.log(`Player: ${countPlayerScore}, Computer: ${countComputerScore}`);
-    if(countPlayerScore==countComputerScore){
+    console.log(`Player: ${PlayerScore}, Computer: ${ComputerScore}`);
+    if(PlayerScore==ComputerScore){
         console.log('tie..');
-    }else if(countPlayerScore>countComputerScore){
+    }else if(PlayerScore>ComputerScore){
         console.log('you are the winner!');
     }else{
         console.log('you defeated');
